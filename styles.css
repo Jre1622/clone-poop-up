@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Recursive", sans-serif;
+}
+
+body {
+  background-color: #f4e0cb;
+}
+
+.master--navbar {
+  margin: 0px 10vw;
+  font-size: 1.1rem;
+}
+
+.navbar--logo--section {
+  display: flex;
+  align-content: center;
+}
+
+.navbar--button {
+  background-color: #ffb54c;
+  border: none;
+  color: black;
+  border-radius: 3rem;
+}
+
+.navbar--button:hover {
+  cursor: pointer;
+  background-color: #ffb54c;
+  color: black;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#money-face {
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-25px);
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.h1--with--emoji {
+  font-size: 2.8rem;
+  max-width: 650px;
+  margin: 0px auto 1rem auto;
+}
+
+.h1--with--emoji:hover #money-face {
+  opacity: 1;
+  transform: translateY(-20px) scale(1.15) rotate(10deg);
+}
+
+.navbar--middle--section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 680px) {
+  #money-face {
+    position: relative;
+    transform: translateY(-25px);
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+}
+.navbar--pricing:hover {
+  text-decoration: underline;
+}
+
+.get--wake-up--button {
+  background-color: #ffb54c;
+  color: black;
+  border: none;
+  animation: breathe 2s infinite ease-in-out;
+}
+.get--wake-up--button:hover {
+  cursor: pointer;
+  background-color: #ffb54c;
+  color: black;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.call--action--features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#wake--up--call {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ffb54c;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar--middle--section {
+    gap: 0px;
+  }
+}
+
+.second--section {
+  height: auto;
+  background-color: rgba(100, 50, 40, 1);
+  color: #f9dfb9;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.second--section--banner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+  padding-top: 150px;
+  max-width: 650px;
+}
+
+.second--section--banner h2 {
+  font-size: 48px;
+}
+
+.second--section--banner p {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+/* CUSTOMER JOURNEY SECTION */
+
+.customer-journey {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 90%;
+  max-width: 700px;
+}
+
+@media (max-width: 670px) {
+  .customer-journey {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .arrow-horizontal {
+    display: none; /* Hide the rightward arrow */
+  }
+
+  .arrow-vertical {
+    display: inline !important; /* Use !important to ensure this rule takes precedence */
+  }
+}
+
+/* For viewports wider than 670px, ensure the vertical arrow is hidden */
+.arrow-vertical {
+  display: none;
+}
+
+.emoji-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.emoji-section span[role="img"] {
+  font-size: 2rem;
+}
+
+.arrow-section {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+/* CUSTOMER JOURNEY SECTION */
+
+/* THIRD SECTION */
+.third--section {
+  background-color: #f4e0cb;
+  height: auto;
+  text-align: center;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.third--section--header {
+  padding: 4rem 0px;
+  max-width: 650px;
+  margin: auto;
+}
+.third--section--header h2 {
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+#not--tomorrow {
+  background-color: rgba(100, 50, 40, 1);
+  color: #f4e0cb;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+#infoAccordion {
+  max-width: 650px;
+  margin: auto;
+}
+
+.flex--container {
+  display: flex;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* PAYMENT SECTION */
+.payment--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px 0px 0px;
+  padding-bottom: 100px;
+}
+
+.payment--banner {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+#pricing--h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.appetizer-header {
+  background-color: #f4e0cb;
+  color: black;
+}
+
+.main-course-header {
+  background-color: #f4e0cb;
+}
+.custom-header {
+  background-color: #f4e0cb;
+  color: black;
+}
+
+.custom-card-body {
+  background-color: #f9dfb9;
+  color: black;
+}
+
+.custom-btn {
+  background-color: #ffb54c;
+  color: black;
+  border: none;
+}
+
+/* ROTATING PRICING ANIMATION */
+@keyframes gradient-glow {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.animated--border {
+  display: grid;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+
+  --border-angle: 0turn; /* For animation */
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #f4e0cb,
+    /* Light background color */ #f9dfb9 5%,
+    /* Slightly darker shade */ #f9dfb9 60%,
+    /* Slightly darker shade */ #f4e0cb 95% /* Light background color */
+  );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #ffb54c, #ffcc00 99%, transparent);
+
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: gradient-glow 3s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
